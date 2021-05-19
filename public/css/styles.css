@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+}
+   
+
+header{
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    background-color: #ebebeb;
+    min-width: 215px;
+}
+
+
+.searchbar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#logo{
+    width: 25%;
+}
+#busqueda{
+    display: flex;    
+    justify-content: center;
+    width: 50%;
+    min-width: 145px;
+}
+#busqueda input{
+    height: 21px;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 5px 0 0 5px;
+    color: #ebebeb;
+    width:80%;
+}
+#buscar-button{
+    height: 21px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    padding: 2px 1px 0;
+    background-color: #ebebeb;
+    width: 20%;
+    max-width: 25px;
+}
+
+.searchbar p{
+    margin: auto;
+    font-size: 14px;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    border-radius: 15%;
+    margin: 10px;
+}
+
+.burger-menu i{
+    color: white;
+    padding: 10px;
+}
+
+
+.fas.fa-truck{
+    color:#39b54a;
+}
+.descuento{
+    color:#39b54a;
+}
+img{
+    width: 100%;
+}
+h2{
+    font-size: 24px;
+}
+
+footer div,
+footer section{
+    text-align: center;
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section i{
+    color: blue;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+footer section p{
+    margin-top:0;
+    font-size: 12px;
+}
+
+h3{
+    font-size: 16px;
+    color:#666;
+    margin:0;
+}
+
+
+main{
+    width: 90%;
+    margin:auto;
+    background-color: #ebebeb;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+main section article{
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+article div{
+    border-top: 1px solid #ebebeb;
+    
+    padding: 15px;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav,
+article h3{
+    display: none;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+
+.precio{
+    font-size: 18px;
+    width: 100%;
+}
+
+/* tablet */
+@media (min-width: 361px){
+    article h3{
+        display: block;
+        opacity: 0;
+        font-size: 10px;
+        transition: all 1s;
+        }
+
+    
+    .burger-menu{
+        display: none;
+    }
+    main section{
+        justify-content: space-between;
+    }
+    main section article{
+        width: 40%;
+    }
+    .searchbar{
+        flex-wrap: nowrap;
+        margin-bottom: 5px;
+    }
+    nav{
+        width: 100%;
+        display:flex;
+    }
+    nav ul{
+        display: flex;
+        flex-grow: .25;
+    }
+    ul a{
+        text-decoration: none;
+        color: #000000;
+        font-size:10px;
+        word-spacing: -1px;
+    }
+    li{
+        list-style:none;
+        margin:auto;
+    }
+    .loginbar{
+        margin-left: auto;
+        flex-grow: .5;
+    }
+
+    ul li i{
+        margin-left: 1px;
+        font-size:10px;
+    }
+
+    article:hover i{
+        transform: rotate(360deg);
+    }
+    article i{
+        transition: all 1.2s;
+    }
+
+    footer div,
+    footer section{
+        margin-top:10px;
+    }
+}
+
+/* desktop */
+@media (min-width: 769px){
+    body{
+        max-width: 1200px;
+        margin:auto;
+    }
+    
+    nav ul{
+        justify-content: space-around;
+        width: auto;
+    }
+    ul a{
+        font-size:12px;;
+    }
+    ul li i{
+        margin-left: 2px;
+    }
+
+    main section{
+        justify-content: space-between;
+    }
+    main section article{
+        width: 20%;
+    }
+
+    
+    article{
+        transition: all 1s;
+    }
+
+
+    main section{
+        align-items: flex-start;
+    }
+
+    article:hover h3{
+        width: 75%;
+        font-size: 18px;
+        opacity: 1;
+    }
+    
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    footer div{
+        flex-direction: row;
+    }
+    footer section{
+        margin:10px;
+        }
+    
+    footer section:hover i{
+        color:#EAC926;
+    }
+    
+}
